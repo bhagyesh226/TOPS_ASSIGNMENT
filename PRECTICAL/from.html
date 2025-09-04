@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FORM</h1>
+    <form >
+        <table border="1" cellpadding="8" cellspacing="0" align="center">
+            <tr>
+                <td><label for="name">Name</label></td>
+                <td><input type="text" id="name" placeholder="enter name" name="name"></td>
+            </tr>
+
+            <tr>
+                <td><label for="age">Age</label></td>
+                <td><input type="number" id="age" placeholder="enter age" name="age"></td>
+            </tr>
+
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" id="email" placeholder="enter email" name="email"></td>
+            </tr>
+
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td><input type="password" id="password" placeholder="enter password" name="password"></td>
+            </tr>
+
+            <tr>
+                <td><label for="range">Range</label></td>
+                <td><input type="range" id="range" name="range"></td>
+            </tr>
+
+            <tr>
+                <td><label for="date">Date</label></td>
+                <td><input type="date" id="date" name="date"></td>
+            </tr>
+
+            <tr>
+                <td><label for="color">Color</label></td>
+                <td><input type="color" id="color" name="color"></td>
+            </tr>
+
+            <tr>
+                <td><label for="address">Address</label></td>
+                <td><textarea id="address" name="address" cols="30" rows="5"></textarea></td>
+            </tr>
+
+            <tr>
+                <td><label for="gender">Gender</label></td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male"> Male
+                    <input type="radio" id="female" name="gender" value="female"> Female
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="country">Country</label></td>
+                <td>
+                    <select id="country" name="country">
+                        <option value="">-- Select Country --</option>
+                        <option value="india">India</option>
+                        <option value="usa">USA</option>
+                        <option value="uk">UK</option>
+                        <option value="canada">Canada</option>
+                        <option value="australia">Australia</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="button">Button</button>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
