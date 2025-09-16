@@ -1,0 +1,148 @@
+
+                                                             ________Theory Assignment_______
+
+                                                                 **--** HTML Basics **--** 
+ 
+
+
+Question 1: Define HTML. What is the purpose of HTML in web development?
+
+→→  HTML (HyperText Markup Language) is the standard language used to create and structure content on the web.
+Its purpose is to define the structure of a webpage by using elements like headings, paragraphs, links, images, lists, and forms.
+
+
+Question 2: Explain the basic structure of an HTML document. Identify the mandatory tags and their purposes.
+
+→→  A basic HTML document includes the following mandatory tags:
+
+<html> → Root element of the HTML document.
+
+<head> → Contains meta information like title, charset, and links to styles/scripts.
+
+<title> → Sets the title of the web page .
+
+<body> → Contains the visible content of the web page.
+
+
+Question 3: What is the difference between block-level elements and inline elements in HTML?
+
+→→  Block-level elements:
+
+Always start on a new line.
+
+Take up the full width available.
+
+Used for larger sections of content.
+
+Examples: <div>, <p>, <h1>, <section>, <article>, <table>.
+
+Inline elements:
+
+Do not start on a new line.
+
+Only take up as much width as needed.
+
+Usually used within block elements for styling or linking.
+
+Examples: <span>, <a>, <img>, <strong>, <em>.
+
+
+
+                                                                **--**  HTML Forms **--** 
+
+
+
+Question 1: What are HTML forms used for? Describe the purpose of the input, textarea, select, and button elements.
+
+→→  HTML Forms are used to collect user input and send it to a server for processing (e.g., login, signup, feedback, search).
+
+Key elements:
+
+<input> → Single-line input field (text, password, email, number, checkbox, radio, etc.).
+
+<textarea> → Multi-line input area for longer text (comments, feedback, messages).
+
+<select> → Dropdown list for choosing one or multiple options.
+
+<button> → Clickable button, usually used to submit or reset the form.
+
+
+Question 2: Explain the difference between the GET and POST methods in form submission. When should each be used?
+
+→→ GET Method
+
+Appends form data to the URL as query parameters.
+
+Data is visible in the address bar.
+
+Best for search, filters, or non-sensitive data.
+
+Example: example.com/search?q=books.
+
+→→ POST Method
+
+Sends data inside the request body (not visible in URL).
+
+More secure for sensitive data (passwords, personal info).
+
+Best for login forms, signup forms, file uploads, database updates.
+
+
+
+Question 3: What is the purpose of the label element in a form, and how does it improve accessibility?
+
+→→  The <label> element defines a caption for a form input (like text input, checkbox, or radio button).
+
+Benefits:
+
+Clicking the label also activates the input, improving usability.
+
+Helps screen readers associate text with the corresponding input field.
+
+Improves accessibility for visually impaired users.
+
+
+
+                                                            **--**  HTML Tables **--**
+
+
+
+
+Question 1: Explain the structure of an HTML table and the purpose of each element.
+
+→→  An HTML table is used to display data in rows and columns. The main elements are:
+
+<table> → Defines the table itself (the container).
+
+<tr> (Table Row) → Defines a row inside the table.
+
+<th> (Table Header) → Defines a header cell (bold and centered by default).
+
+<td> (Table Data) → Defines a standard data cell.
+
+<thead> (Table Head) → Groups the header rows of a table, making it more structured.
+
+
+
+Question 2: What is the difference between colspan and rowspan in tables? Provide examples.
+
+→→  colspan → Expands a cell horizontally across multiple columns.
+
+→→  rowspan → Expands a cell vertically across multiple rows.
+
+
+Question 3: Why should tables be used sparingly for layout purposes? What is a better alternative?
+
+Reason:
+
+→→ Tables were once used for creating page layouts, but this makes code complex, less accessible, and harder to maintain.
+
+Screen readers and mobile devices struggle with table-based layouts.
+
+Better Alternative:
+
+Use CSS layout techniques such as Flexbox or CSS Grid, which are more modern, responsive, and semantic.
+
+
+
+                                                                                                                                 -BHAGYESH KAVTHIYA
