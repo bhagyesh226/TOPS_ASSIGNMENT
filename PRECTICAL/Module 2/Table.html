@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Product Catalog</title>
+</head>
+<body>
+  <h1 style="font-family: Arial, sans-serif;">Product Catalog</h1>
+
+  <table style="width:100%; border-collapse: collapse; font-family: Arial, sans-serif;"
+         border="1" cellpadding="8" cellspacing="0" role="table">
+    <!-- Table header using thead -->
+    <thead>
+      <tr style="background:#f2f2f2; text-align:left;">
+        <th style="padding:10px;">Product Name</th>
+        <th style="padding:10px;">Product Image</th>
+        <th style="padding:10px;">Price</th>
+        <th style="padding:10px;">Description</th>
+        <th style="padding:10px;">Availability</th>
+      </tr>
+    </thead>
+
+    <tbody>
+     
+      <!-- Product 1:  -->
+      <tr>
+        <td>Wireless Headphones</td>
+        <td style="text-align:center; ">
+          <img src="https://cdn.mos.cms.futurecdn.net/KfKJ7uGAXBxezdLqFMAZAR.jpg" alt="Wireless Headphones" style="display:block; margin:0 auto; width:fit-content; height: 100px;">
+        </td>
+        <td>₹2,499</td>
+        <td>Over-ear Bluetooth headphones with 20-hour battery life and noise cancellation.</td>
+        <td style="text-align:center;">In stock</td>
+      </tr>
+
+      <!-- Product 2: -->
+      <tr>
+        <td>Stylish Chair — Fabric</td>
+        <td rowspan="2" style="text-align:center; vertical-align:middle;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaPTFw2mDdIMZ9luEzyut6pBThUfGjii3zVw&s" alt="Stylish Chair" style="display:block; margin:0 auto; width:fit-content; height: 100px;">
+          
+        </td>
+        <td>₹4,199</td>
+        <td>Comfortable fabric dining chair — soft cushion, wooden legs.</td>
+        <td style="text-align:center;">In stock</td>
+      </tr>
+      <tr>
+        <td>Stylish Chair — Leather</td>
+        <td>₹5,299</td>
+        <td>Premium faux leather finish, easy-to-clean surface.</td>
+        <td style="text-align:center;" rowspan="2">Out of stock</td>
+      </tr>
+
+      <!-- Product 3: -->
+      <tr>
+        <td>Smart Lamp</td>
+        <td style="text-align:center;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRME9Cv-tUfrcK8ODyEmRCsCIWme2L_vKw2g&s" alt="Smart Lamp" style="display:block; margin:0  auto; width:fit-content; height: 100px;">
+        </td>
+        <td>
+          <strong>₹1,199</strong>
+          </td>
+          <td>
+          Voice-controlled smart lamp with color-changing LED, schedule timer, and app control.
+        </td>
+        <!-- <td style="text-align:center;">In stock</td> -->
+      </tr>
+
+      <!-- Product 4: -->
+      <tr>
+        <td>Travel Backpack</td>
+        <td style="text-align:center;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0TF_k2NIMCS9QtJu6yUFxj78Kr9FkB06mOQ&s" alt="Travel Backpack" style="display:block; margin:0 auto; width:fit-content; height: 100px;">
+        </td>
+        <td>₹1,799</td>
+        <td>Water-resistant backpack with laptop sleeve (up to 15.6"), multiple compartments.</td>
+        <td style="text-align:center;">In stock</td>
+      </tr>
+
+      <!-- Footer row: total products, using colspan -->
+      <tr>
+        <td colspan="5" style="text-align:right; background:#f7f7f7; padding:10px; font-style:italic;">
+          Displaying 5 product entries (including variants).
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
