@@ -1,0 +1,140 @@
+
+            -*-*-*_Module 1:-Overview of IT Industry_-*-*-*
+
+1:- What is a Program? 
+	A program is a set of instructions written in a programming language that tells a computer what to do. 
+
+2:- What is Programming? 
+	Programming is the process of creating a set of instructions (a program) that a computer can understand and execute to perform a specific task. 
+	It is how humans communicate with computers using programming languages like Python, C, or Java. 
+
+3:- Types of Programming Languages ? 
+	There are many types of  Programming Languages like python , c , java , c++, c# 4:- :What are the main differences between high-level and low-level programming languages?  
+•	High-Level Languages (HLL): 
+•	Provide a high degree of abstraction from hardware. 
+•	Focus on logic and problem-solving rather than hardware details. • 	Example: Python, Java, C++, JavaScript. 
+•	Low-Level Languages (LLL): 
+•	Closer to machine code and hardware. 
+•	Require detailed handling of memory, registers, and system architecture. • 	Example: Assembly language, Machine code (binary). 
+
+5:- Describe the roles of the client and server in web communication.  
+1. Client: 
+• 	Initiates the communication by sending a request (e.g., asking for a web page). • 	Displays the response received from the server (like showing a website). 
+2. Server 
+•	Waits for requests from clients. 
+•	Processes the request (e.g., fetch data, run backend logic). 
+•	Sends a response back (HTML, JSON, images, videos, etc.). 
+
+6:- Explain the function of the TCP/IP model and its layers 
+Function of the TCP/IP Model 
+•	The TCP/IP model (Transmission Control Protocol / Internet Protocol) is a networking framework that defines how data is transmitted across networks, including the internet. 
+•	It ensures end-to-end communication: from one device (sender) to another (receiver). • 	It standardizes how computers send, route, and receive data reliably and efficiently. 
+1.	Application Layer 
+2.	Transport Layer 
+3.	Internet Layer 
+4.	Network Access Layer 
+
+7:- Types of Internet Connections 
+ There are many types of  Internet Connections so of them given below  
+1.	Digital Subscriber Line  
+2.	Cable Internet  
+3.	Fiber-Optic Internet  
+4.	Satellite Internet  
+5.	Wi-Fi  
+6.	Mobile Data  
+7.	Fixed Wireless  
+
+
+8:- How does broadband differ from fiber-optic internet?  
+•	Broadband (General term): 
+•	Refers to high-speed internet that is always on. 
+•	Can be delivered through DSL (phone lines), Cable (TV coaxial cables), Satellite, or Fiber. 
+•	So, broadband is an umbrella term. 
+•	Fiber-Optic Internet: 
+•	A type of broadband that uses thin glass fibers to transmit data as light signals. • 	Much faster and more reliable than DSL or cable. 
+
+
+ 9:- What are the differences between HTTP and HTTPS protocols?  
+•	HTTP: 
+•	Data is transferred in plain text. 
+•	Vulnerable to attacks (hackers can intercept data, e.g., passwords). 
+•	HTTPS: 
+•	Uses SSL/TLS encryption to secure data. 
+•	Protects against eavesdropping, tampering, and man-in-the-middle attacks. 
+
+
+ 10:- What is the role of encryption in securing applications  
+	Encryption is the process of converting readable data (plaintext) into an unreadable format (ciphertext) using algorithms. 
+	Only someone with the correct key can decrypt it back into readable data. 
+
+
+11:- What is the difference between system software and application software?  
+	System Software: 
+•	Software designed to manage and control computer hardware and provide a platform for running application software. 
+•	Acts as an interface between hardware and user applications. 
+  Application Software: 
+•	Software designed to perform specific tasks for the user. 
+•	Helps users solve problems or perform activities on a computer. 
+
+
+12:- : What is the significance of modularity in software architecture? 
+1.	Easier Maintenance 
+2.	Reusability 
+3.	Improved Readability and Manageability 
+4.	Parallel Development 
+5.	Scalability 
+6.	Testing and Debugging 
+
+
+13:- Why are layers important in software architecture? 
+	Layers are logical divisions of software into separate levels, where each layer has specific responsibilities. 
+	Common example: Presentation Layer, Business Logic Layer, Data Layer in web applications. 
+
+
+14:- Explain the importance of a development environment in software production. 
+1.	Safe Testing Space 
+•	Developers can test code without affecting the live system. 
+•	Errors, crashes, or unfinished features won’t impact real users. 
+2.	Efficient Development 
+•	IDEs provide tools like code highlighting, auto-completion, and debugging, speeding up coding. 
+•	Version control (like Git) helps manage code changes efficiently. 
+3.	Debugging and Error Detection 
+•	Developers can identify and fix bugs before deployment. 
+•	Many development environments include debuggers, log viewers, and testing tools. 
+4.	Collaboration 
+•	Teams can use shared development environments or standardized setups to ensure everyone works consistently. 
+•	Example: Docker or virtual environments ensure the same setup across developers’ machines. 
+ 
+15:- What is the difference between source code and machine code? 
+ Source Code: 
+•	The human-readable instructions written by programmers using a programming language (like Python, C++, or Java). 
+•	Written in high-level or low-level languages, but understandable by humans. 
+ Machine Code: 
+•	The binary instructions (0s and 1s) that the computer’s CPU can directly execute. • 	Not readable by humans. 
+
+
+16:- : What role does UI/UX design play in application development? 
+	UI (User Interface) Design: Focuses on the look and layout of the application – buttons, menus, colors, fonts, icons, and screens. 
+	UX (User Experience) Design: Focuses on the overall experience of the user – ease of use, navigation flow, accessibility, and satisfaction. 
+1.	Enhances User Satisfaction 
+2.	Improves Usability 
+3.	Increases Engagement 
+
+
+17:- What are the advantages of using web applications over desktop applications? 
+1.	Platform Independence 
+2.	Easy Access Anywhere  
+3.	Automatic Updates 
+4.	Reduced Maintenance 
+5.	Lower Hardware Requirements 
+6.	Collaboration and Sharing 
+7.	Cost-Effectiveness 
+
+
+18:- : Why is software testing important?\ 
+1.	Ensures Quality 
+2.	Detects and Fixes Bugs Early 
+3.	Improves User Experience 
+4.	Security Verification 
+5.	Enhances Performance 
+6.	Ensures Compliance 
