@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3x3 Product Grid</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    /* Grid Container */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 columns */
+      grid-gap: 20px; /* spacing between items */
+    }
+
+    /* Product Card */
+    .product-card {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 150px;
+      object-fit:contain;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .product-card h3 {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    .product-card p {
+      font-size: 16px;
+      color: #007bff;
+      font-weight: bold;
+    }
+
+    /* Responsive for smaller screens */
+    @media (max-width: 900px) {
+      .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .product-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Our Products</h1>
+
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="https://w0.peakpx.com/wallpaper/384/625/HD-wallpaper-ff-hip-hop-bundle-joker-fire-game.jpg" alt="Product 1">
+      <h3>hip hop bundle joker</h3>
+      <p>$19.99</p>
+    </div>
+
+    <div class="product-card">
+      <img src="https://i.pinimg.com/736x/a4/6f/29/a46f29fc986ce5e3646b2947ebc329c4.jpg" alt="Product 2">
+      <h3>Dragon Slayer Set</h3>
+      <p>$29.99</p>
+    </div>
+
+    <div class="product-card">
+      <img src="https://w0.peakpx.com/wallpaper/702/862/HD-wallpaper-ff-hip-hop-bundle-fire-sakura-hip-hop-bundle-game-thumbnail.jpg" alt="Product 3">
+      <h3>Cyber Ninja Outfit</h3>
+      <p>$39.99</p>
+    </div>
+
+    <div class="product-card">
+      <img src="https://i.pinimg.com/236x/42/3c/89/423c89a5284e7e9c1c817602aefb116e.jpg" alt="Product 4">
+      <h3>Golden Warrior Bundle</h3>
+      <p>$24.99</p>
+    </div>
+
+    <div class="product-card">
+      <img src="https://i.pinimg.com/236x/1f/e4/82/1fe482f0bbac0488bbb3d6019a280268.jpg" alt="Product 5">
+      <h3>Mystic Phantom Bundle</h3>
+      <p>$34.99</p>
+    </div>
+
+    <div class="product-card">
+      <img src="https://w0.peakpx.com/wallpaper/343/963/HD-wallpaper-fire-samurai-ff-samurai-zumbificado.jpg" alt="Product 6">
+      <h3>Galactic Guardian Pack</h3>
+      <p>$44.99</p>
+    </div>
+
+    <div class="product-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9KHjRF9nakycKB6ETqdYrYBm6NuuoppNq-Mc17WGlDGKE_F5tCY18klh_9WhA_TX97M&usqp=CAU" alt="Product 7">
+      <h3>Rogue Samurai Set</h3>
+      <p>$14.99</p>
+    </div>
+
+    <div class="product-card">
+      <img src="https://e1.pxfuel.com/desktop-wallpaper/458/312/desktop-wallpaper-red-criminal-ff-by-bashaqib-red-criminal-bundle.jpg" alt="Product 8">
+      <h3>Arctic Reaper Set</h3>
+      <p>$22.99</p>
+    </div>
+
+    <div class="product-card">
+      <img src="https://i.pinimg.com/474x/3b/66/9c/3b669ccb24a13eeeb9817ea50274b6d3.jpg" alt="Product 9">
+      <h3>Dragon Hunter Bundle</h3>
+      <p>$49.99</p>
+    </div>
+  </div>
+
+</body>
+</html>

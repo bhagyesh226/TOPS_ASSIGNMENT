@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout with Header</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header (your existing code) */
+        header {
+            width: 100%;
+            height: 80px;
+            background-color: gray;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .mine {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+        }
+
+        .item {
+            display: flex;
+            gap: 15px;
+        }
+
+        .item div {
+            width: 80px;
+            height: 40px;
+            background-color: rgb(0, 123, 255);
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .item div:hover {
+            background-color: rgb(0, 100, 210);
+        }
+
+        /* Main Layout */
+        .container {
+            display: flex;
+            flex: 1;
+            min-height: 400px;
+        }
+
+        .sidebar {
+            background-color: #f4f4f4;
+            width: 200px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .sidebar div {
+            padding: 10px;
+            background-color: #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .sidebar div:hover {
+            background-color: #ccc;
+        }
+
+        .main {
+            flex: 1;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="mine">
+            <div class="logo">
+                <img src="https://img.freepik.com/premium-vector/lt-logo-design_731343-1016.jpg" alt="Logo">
+            </div>
+            <div class="item">
+                <div class="home">Home</div>
+                <div class="about">About</div>
+                <div class="all">All</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Layout -->
+    <div class="container">
+        <aside class="sidebar">
+            <div>My Profile</div>
+            <div>My Cred</div>
+            <div>All Users</div>
+        </aside>
+
+        <main class="main">
+            <main class="main">
+                <h2>Main Content</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec urna a libero tempor malesuada.
+                    Integer eget quam vel justo fermentum sodales.</p>
+                <p>Praesent vel turpis ac lacus faucibus pulvinar. Aenean eget dolor a metus consectetur cursus.
+                    Curabitur luctus risus id mi finibus, eget commodo justo fringilla.</p>
+                <p>Aliquam erat volutpat. Donec a ligula at sapien porttitor feugiat. Quisque vel turpis ut nisi pretium
+                    malesuada ut nec sapien.</p>
+                <p>Fusce tincidunt, sapien ut efficitur ullamcorper, justo nisl iaculis orci, in scelerisque metus
+                    turpis non justo. Sed gravida metus sit amet nisl fermentum, at dignissim erat ultrices.</p>
+                <p>Morbi vehicula mi sed nisi facilisis, sed sagittis erat tincidunt. Integer sit amet est eget risus
+                    tincidunt vehicula eu a lacus.</p>
+            </main>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        © 2025 My Website. All rights reserved.
+    </footer>
+</body>
+
+</html>
