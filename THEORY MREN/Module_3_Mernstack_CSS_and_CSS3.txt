@@ -1,0 +1,148 @@
+
+                        -------Module 3 :– Mernstack – CSS and CSS3------
+ 
+                            --**--CSS Selectors & Styling --**--
+
+
+Question 1: What is a CSS selector? Provide examples of element, class, and ID selectors.
+-->A CSS selector is used to select and target specific HTML elements that we want to style.
+It tells the browser which elements the CSS rules should apply to. 
+There are different types of selectors such as element, class, and ID selectors. 
+
+An element selector selects all HTML elements of a particular type. 
+For example, the rule p { color: blue; } will make the text of all <p> (paragraph) elements blue.
+
+
+Question 2: Explain the concept of CSS specificity. How do conflicts between multiple styles get resolved? 
+-->CSS specificity is a rule that determines which CSS style will be applied to an element when there are multiple conflicting styles. 
+It defines the importance or priority of a CSS selector. 
+When two or more CSS rules target the same element, the browser decides which rule to apply based on the specificity value of each selector.
+
+
+Question 3: What is the difference between internal, external, and inline CSS? Discuss the advantages and disadvantages of each approach. 
+--> "Inline CSS" is written directly inside an HTML element using the style attribute. 
+For example, <p style="color: blue;">Hello</p>. 
+It is useful for applying a unique style to a single element but becomes difficult to maintain for large webpages. 
+Its main advantage is that it affects only that element immediately, but its disadvantage is poor readability and reusability of code.
+
+-->Internal CSS is written inside the <style> tag within the <head> section of an HTML page. 
+It applies styles to all elements on that specific page. For example,
+    <style>
+       p { color: green; }
+    </style>
+The advantage of internal CSS is that it keeps the CSS and HTML in the same file, making it easy to test small projects. 
+However, it increases page size if used on many pages since the same styles must be repeated.
+
+-->External CSS is written in a separate .css file and linked to the HTML page using the <link> tag. For example, <link rel="stylesheet" href="style.css">. 
+It is the most efficient way to style large websites because one stylesheet can control the design of multiple pages. 
+The main advantage is easy maintenance and consistency across pages, but the disadvantage is that styles may not appear if the CSS file fails to load due to network issues.
+
+              
+                              --**-->> CSS Box Model <<--**--
+
+
+Question 1: Explain the CSS box model and its components (content, padding, border, margin). How does each affect the size of an element? 
+-->The CSS box model is a fundamental concept that describes how every HTML element on a webpage is represented as a rectangular box. 
+This box consists of four main components: content, padding, border, and margin. 
+Together, they determine the total size and spacing of an element on a webpage.
+
+-->Each of these parts affects the total size of an element. 
+The overall width and height of an element are calculated as:
+Total width = content width + padding + border + margin, and similarly for height.
+
+
+Question 2: What is the difference between border-box and content-box box-sizing in CSS? Which is the default? 
+-->In CSS, the box-sizing property determines how the total width and height of an element are calculated. 
+The two main values are content-box and border-box.
+
+-->In the content-box model, which is the default box-sizing in CSS, the width and height apply only to the content area of the element. 
+This means that padding and border are added outside the content area, increasing the total size of the element. 
+For example, if an element has a width of 200px with 10px padding and a 5px border, the total width becomes 230px (200 + 10 + 10 + 5 + 5).
+
+-->In contrast, the border-box model includes the content, padding, and border within the specified width and height. 
+This means the total size of the element remains fixed, and the content area automatically adjusts to make room for the padding and border.
+
+
+                                     --**-->> CSS Flexbox <<--**--
+
+
+Question 1: What is CSS Flexbox, and how is it useful for layout design? Explain the terms flex-container and flex-item. 
+-->CSS Flexbox (Flexible Box Layout) is a modern CSS layout module designed to arrange and align elements efficiently within a container, even when their size is unknown or dynamic. 
+It provides an easy and flexible way to design responsive layouts without using floats or positioning. 
+Flexbox helps in distributing space evenly and aligning items both horizontally and vertically, making layout design simpler and more consistent across different screen sizes.
+
+-->In Flexbox, the flex-container is the parent element that holds and controls the layout of the child elements. 
+It is created by setting the container’s display property to flex or inline-flex. 
+The flex-items are the child elements inside the flex-container that automatically adjust their size and position according to the container’s properties.
+
+Question 2: Describe the properties justify-content, align-items, and flex- direction used in Flexbox. 
+-->The justify-content property is used to align flex items horizontally along the main axis. 
+It helps in distributing extra space between items. 
+Common values include flex-start (items align to the left), flex-end (to the right), center (in the middle), space-between (equal space between items), and space-around (equal space around items).
+
+-->The align-items property aligns flex items vertically along the cross axis. 
+It controls how items are positioned relative to the container’s height. 
+Common values include flex-start (top), flex-end (bottom), center (middle), baseline (aligned by text baseline), and stretch (items stretch to fill the container height).
+
+-->The flex-direction property defines the direction of the main axis, 
+determining whether items are placed in a row or a column. 
+Its values are row (default, items go left to right), row-reverse, column (top to bottom), and column-reverse.
+
+
+                                       --**-->> CSS Grid <<--**--
+
+
+Question 1: Explain CSS Grid and how it differs from Flexbox. When would you use Grid over Flexbox? 
+-->CSS Grid is a layout system that arranges elements in rows and columns, allowing precise two-dimensional control. 
+It differs from Flexbox, which is one-dimensional and arranges items in a single row or column.
+
+-->Use Grid for complex layouts like page sections, dashboards, or galleries, and use Flexbox for simpler one-dimensional alignment like nav bars or item lists.
+
+Question 2: Describe the grid-template-columns, grid-template-rows, and grid- gap properties. Provide examples of how to use them. 
+-->In CSS Grid, the grid-template-columns and grid-template-rows properties define the structure of the grid by specifying the number and size of columns and rows. 
+For example, 
+   grid-template-columns: 100px 200px 100px; 
+creates three columns with specified widths, and 
+   grid-template-rows: 150px 100px; 
+creates two rows with specified heights. 
+The grid-gap (or gap) property adds spacing between rows and columns, making the layout cleaner and easier to read. For instance, 
+   gap: 10px; 
+adds a 10px space between all grid items.
+           
+           ex. :-
+
+            .container {
+            display: grid;
+            grid-template-columns: 100px 200px 100px;
+            grid-template-rows: 150px 100px;
+            gap: 10px;
+            }
+
+
+                            --**-->> Responsive Web Design with Media Queries <<--**--
+
+
+Question 1: What are media queries in CSS, and why are they important for responsive design? 
+-->Media queries in CSS are rules that allow web developers to apply styles based on the characteristics of the user’s device, 
+such as screen width, height, resolution, or orientation. 
+They are essential for responsive design because they enable a website to adapt its layout and appearance for different devices, 
+such as desktops, tablets, and smartphones. 
+For example, using a media query like @media (max-width: 600px) { ... } allows you to change styles specifically for screens that are 600px wide or smaller. 
+Media queries help ensure that a website looks good and functions well on all devices.
+
+Question 2: Write a basic media query that adjusts the font size of a webpage for screens smaller than 600px 
+-->Here’s a simple example of a media query for that purpose:
+
+                /* Default font size for larger screens */
+                body {
+                font-size: 16px;
+                }
+
+                /* Media query for screens smaller than 600px */
+                @media (max-width: 600px) {
+                body {
+                    font-size: 14px;
+                }
+                }
+
+                
