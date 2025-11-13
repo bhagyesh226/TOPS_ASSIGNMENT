@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move Animation</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            border: 2px solid blue;
+            position: relative;
+            animation: myanime 2s infinite alternate ease-in-out;
+        }
+
+        @keyframes myanime {
+            from {
+                transform: translate(0,0);
+                width: 200px;
+                height: 200px;
+                border-radius: 0;
+                background-color: aquamarine;
+            }
+            to {
+                transform: translate(100px,100px);
+                width: 400px;
+                height: 400px;
+                border-radius: 50%;
+                background-color: rgb(5, 91, 62);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

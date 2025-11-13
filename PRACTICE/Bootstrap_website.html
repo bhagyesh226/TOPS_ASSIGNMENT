@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Three-part Navbar - Bootstrap 5</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        /* Small visual tweaks */
+        .navbar {
+            padding: 0.5rem 1rem;
+        }
+
+        /* Center nav appearance for large screens */
+        .nav-center {
+            flex: 1 1 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .nav-link:hover {
+            color: #7fad39;
+        }
+
+        /* Links spacing */
+        .nav-center .nav-link {
+            margin: 0 .5rem;
+            font-weight: 500;
+        }
+
+        /* Right area icon spacing and cart label */
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: .75rem;
+            font-weight: bolder;
+        }
+
+        .cart-label {
+            font-weight: 600;
+            margin-left: .35rem;
+            white-space: nowrap;
+        }
+
+        .dropdown .btn {
+            width: 100%;
+            background-color: #7fad39;
+            font-weight: bolder;
+            font-size: larger;
+            border-radius: 0%;
+        }
+
+
+        /* scroll--bar */
+        .scroll-container {
+            display: flex;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            gap: 1rem;
+            padding: 1rem;
+        }
+
+        .card {
+            flex: 0 0 auto;
+            width: 18rem;
+        }
+
+
+        .box1:hover {
+            border-bottom: 3px solid #7fad39;
+            cursor: pointer;
+        }
+
+
+
+        /* Ensure the center menu looks good after collapse toggle */
+        @media (max-width: 991.98px) {
+            .nav-center {
+                justify-content: flex-start;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <div class="container-fluid">
+            <!-- Left: logo / brand -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <!-- Example logo: replace with img if you have one -->
+                <img src="logo.png" alt="logo" width="90" height="36" class="me-2">
+            </a>
+
+            <!-- Toggler (shows on smaller screens) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#centerNav"
+                aria-controls="centerNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Center navigation (collapsible) -->
+            <div class="collapse navbar-collapse nav-center" id="centerNav">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SHOP</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            PAGES
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                            <li><a class="dropdown-item" href="#">ABOUT</a></li>
+                            <li><a class="dropdown-item" href="#">FAQ</a></li>
+                            <li><a class="dropdown-item" href="#">Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right: two icons (like + cart with price) -->
+            <div class="nav-right">
+                <!-- Like / wishlist -->
+                <a class="btn btn-link text-dark d-flex align-items-center" href="#" title="Wishlist">
+                    <i class="bi bi-heart fs-5" aria-hidden="true"></i>
+                </a>
+                <a class="btn btn-link text-dark d-flex align-items-center" href="#" title="Wishlist">
+                    <i class="bi bi-cart3 fs-5" aria-hidden="true"></i>
+                </a>
+
+                <span class="cart-label ms-2">Item: $150.00</span>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid mt-4">
+        <div class="row gy-3  ">
+            <div class=" col-lg-4 ">
+                <div class="dropdown">
+                    <button class="btn text-light p-2 dropdown-toggle w-100" type="button" id="dropdownMenuButton"
+                        data-bs-toggle="dropdown" aria-expanded="false"
+                        style="background-color: #7fad39; font-weight: 600;">
+                        All departments
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-8   ">
+                <div class="row gy-3 ">
+                    <div class=" col-lg-8 col-md-8 ">
+                        <div class="row   " style="border: 1px solid #444544;">
+                            <div class="col-lg-4 col-md-4 d-none d-md-block gx-0">
+                                <select style="width: 100%; height: 45px; border: none; font-weight: bolder;">
+                                    <option value="volvo">All Categories </option>
+                                    <option value="saab">Saab</option>
+                                    <option value="mercedes">Mercedes</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-8 col-8 ">
+                                <input type="text " style="width: 100%; height: 45px; border: none;"
+                                    placeholder="what you need?">
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-4 col-4 gx-0">
+                                <button
+                                    style="width: 100%; height: 45px; border: none; background-color: #7fad39; color: white; font-weight: bolder;">SERCH</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-md-4  ">
+                        <div class="row">
+                            <div class="col-3  ">
+                                <i class="bi bi-telephone-fill p-2  fs-2"
+                                    style="color: #7fad39; background-color: #a6a8a6; border-radius: 60%;"
+                                    aria-hidden="true"></i>
+                            </div>
+                            <div class="col-9 ">
+                                <div class="nuber" style="font-weight: bolder;">+65 11.188.888</div>
+                                <div class="nub" style="color: #a6a8a6;">support 24/7 time</div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="row position-relative mt-4">
+                        <div class="col-lg-12 p-0">
+                            <img src="banner.png" alt="banner" width="100%" style="height: auto;">
+
+                            <!-- Transparent box overlay -->
+                            <!-- <div class="box position-absolute top-50 start-0 translate-middle-y text-end p-4" style="width: 40%; margin-right: 50px;  border-radius: 10px;    ">
+                                <h4 style="color: #7fad39; font-weight: bold;">FRUIT FRESH</h4>
+                                <h1 style="font-size: 2rem; font-weight: 700;">Vegetable 100% Organic</h1>
+                                <h5>Free Pickup and Delivery Available</h5>
+                                <button style="background-color: #7fad39; color: white; border: none; padding: 10px 25px; font-weight: bold; margin-top: 10px; ">
+                                    SHOP NOW
+                                </button>
+                            </div> -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4">
+
+            <div class="scroll-container" id="cardContainer">
+                <div class="card">
+                    <img src="cat-1.jpg" class="card-img-top" alt="cat image">
+                    <div class="box d-flex bg-success text-white align-items-center justify-content-center p-2"
+                        style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); width: 80%; height: 20%; border-radius: 5px;">
+                        <h5 style="font-weight: bolder;">Fresh fruit</h5>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <img src="feature-1.jpg " class="card-img-top" alt="">
+                    <div class="box d-flex bg-success text-white align-items-center justify-content-center p-2"
+                        style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); width: 80%; height: 20%; border-radius: 5px;">
+                        <h5 style="font-weight: bolder;">Fresh Meat</h5>
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <img src="cat-4.jpg" class="card-img-top" alt="">
+                    <div class="box d-flex bg-success text-white align-items-center justify-content-center p-2"
+                        style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); width: 80%; height: 20%; border-radius: 5px;">
+                        <h5 style="font-weight: bolder;">drink fruits</h5>
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <img src="cat-3.jpg" class="card-img-top" alt="">
+                    <div class="box d-flex bg-success text-white align-items-center justify-content-center p-2"
+                        style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); width: 80%; height: 20%; border-radius: 5px;">
+                        <h5 style="font-weight: bolder;">vegetebles</h5>
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <img src="cat-2.jpg" class="card-img-top" alt="">
+                    <div class="box d-flex bg-success text-white align-items-center justify-content-center p-2"
+                        style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); width: 80%; height: 20%; border-radius: 5px;">
+                        <h5 style="font-weight: bolder;">dried fruits</h5>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- product cards -->
+        <div class=" product ">
+            <div class="titel text-center ">
+                <h1 style="font-weight: bolder;  margin-top: 30px;">
+                    Featured Products
+                </h1>
+                <h2 class="bolder" style="color: #6b8d6b; ">_________</h2>
+            </div>
+            <div class="d-flex justify-content-center  mt-6 p-4 mb-2" style="gap: 30px; overflow-y: auto;">
+                <div class="box1 ">
+                    <h5>All</h5>
+                </div>
+
+                <div class="box1">
+                    <h5>Oranges</h5>
+                </div>
+                <div class="box1">
+                    <h5>Fresh Meat</h5>
+                </div>
+                <div class="box1">
+                    <h5>Vegetables </h5>
+                </div>
+                <div class="box1">
+                    <h5>Fastfood </h5>
+                </div>
+
+            </div>
+
+
+
+            <div class="container my-5">
+
+                <div class="row g-4 product-card">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="card w-100 h-100">
+                            <img src="feature-1.jpg" class="card-img-top" alt="Product 1">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Crab Pool Security</h5>
+                                <h2 href="#" class="bold">$30.00</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="card w-100  h-100">
+                            <img src="feature-2.jpg" class="card-img-top" alt="Product 2">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Crab Pool Security</h5>
+                                <h2 href="#" class="bold">$30.00</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="card w-100  h-100">
+                            <img src="feature-3.jpg" class="card-img-top" alt="Product 3">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Crab Pool Security</h5>
+                                <h2 href="#" class="bold">$30.00</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="card w-100  h-100">
+                            <img src="feature-4.jpg" class="card-img-top" alt="Product 4">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Crab Pool Security</h5>
+                                <h2 href="#" class="bold">$30.00</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="card w-100  h-100">
+                            <img src="feature-6.jpg" class="card-img-top" alt="Product 5">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Crab Pool Security</h5>
+                                <h2 href="#" class="bold">$30.00</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="card w-100  h-100">
+                            <img src="feature-7.jpg" class="card-img-top" alt="Product 6">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Crab Pool Security</h5>
+                                <h2 href="#" class="bold">$30.00</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="card w-100  h-100">
+                            <img src="feature-1.jpg" class="card-img-top" alt="Product 7">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Crab Pool Security</h5>
+                                <h2 href="#" class="bold">$30.00</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="benner container my-5">
+            <div class="row gy-3">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <img src="banner-1.jpg" alt="Banner 1" class="img-fluid w-100 rounded">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <img src="banner-2.jpg" alt="Banner 2" class="img-fluid w-100 rounded">
+                </div>
+            </div>
+        </div>
+
+        <div class="titel text-center ">
+            <h1 style="font-weight: bolder;  margin-top: 30px;">
+                From The Blog
+            </h1>
+            <h2 class="bolder" style="color: #6b8d6b; ">_________</h2>
+        </div>
+
+        <div class="container my-5">
+            <div class="row">
+                
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="card  w-100  h-100" style="width: 18rem;">
+                        <img src="blog-1.jpg" class="card-img-top" alt="Product image">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center meta-info mb-2">
+                                <span><i class="bi bi-calendar-date me-1"></i> Nov 13, 2025</span>
+                                <span><i class="bi bi-chat-dots me-1"></i> 5 comments</span>
+                            </div>
+                            <h5 class="card-title">Cooking tips make cooking simple</h5>
+                            <p class="card-text">
+                               Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="card  w-100  h-100" style="width: 18rem;">
+                        <img src="blog-2.jpg" class="card-img-top" alt="Product image">
+                        <div class="card-body ">
+                            <div class="d-flex justify-content-between align-items-center meta-info mb-2">
+                                <span><i class="bi bi-calendar-date me-1"></i> Nov 13, 2025</span>
+                                <span><i class="bi bi-chat-dots me-1"></i> 5 comments</span>
+                            </div>
+                            <h5 class="card-title">6 ways to prepare breakfast for 30</h5>
+                            <p class="card-text">
+                                Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="card  w-100  h-100" style="width: 18rem;">
+                        <img src="blog-3.jpg" class="card-img-top" alt="Product image">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center meta-info mb-2">
+                                <span><i class="bi bi-calendar-date me-1"></i> Nov 13, 2025</span>
+                                <span><i class="bi bi-chat-dots me-1"></i> 5 comments</span>
+                            </div>
+                            <h5 class="card-title">Visit the clean farm in the US</h5>
+                            <p class="card-text">
+                                Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+</body>
+
+</html>
