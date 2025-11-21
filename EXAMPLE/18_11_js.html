@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="text"></h2>
+    <h2 id="demo"></h2>
+    <script>
+        // syncronous language
+        // scripting laguagage 
+        // both side clint or admin 
+console.warn('hello..')
+document.write('hello bhai...')
+document.getElementById('demo').innerHTML= '<br> no one <br>'
+document.getElementById('text').innerText='<br> hello mina <br>'
+
+// varbal 
+// 1) Nothing 
+a= 12
+b=3
+c=a+b
+document.write(' a + b =', c)
+
+// 2) var is redeclare & reassing are allowed
+document.write('<br><hr><b>var varabal </b> <br>')
+var name = '<br>bhagyesh'
+document.write(name)
+var name = '<br>tinu'
+document.write(name)
+
+//3) let is don't redeclare but allow to  reassing
+document.write('<br><hr><b>let varabal </b> <br>')
+let name1 = '<br>bhagu'
+document.write (name1)
+name1= '<br>on one '
+document.write(name)
+
+// 4) const is don't allow to redeclare or reassing
+document.write('<br><hr><b>const varabal </b> <br>')
+const name2 = '<br>shubham'
+document.write(name2) 
+    </script>
+</body>
+</html>

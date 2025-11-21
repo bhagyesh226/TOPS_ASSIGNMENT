@@ -1,0 +1,55 @@
+
+                        -------Module 5 – Mernstack – HTML5 ------
+ 
+Question 1: Difference b/w HTML & HTML5? 
+-->HTML
+
+Older version of the markup language for creating web pages.
+
+Does not support audio, video, or graphics natively.
+
+Requires external plugins like Flash for multimedia.
+
+Limited storage support (no localStorage, sessionStorage).
+
+Less support for mobile-friendly and responsive design.
+
+-->HTML5
+
+Latest and improved version of HTML.
+
+Supports audio & video tags (<audio>, <video>) without plugins.
+
+Includes the canvas tag for graphics & animations.
+
+Provides localStorage & sessionStorage for offline storage.
+
+Better semantic tags like <header>, <footer>, <article>, <section>.
+
+Improved support for responsive design and mobile devices.
+
+Better form controls like email, date, range, etc.
+
+
+Question 2: What are the additional tags used in HTML5? 
+--><header>
+
+<footer>
+
+<nav>
+
+<section>
+
+<article>
+
+<aside>
+
+<main>
+
+<figure>
+
+<figcaption>
+
+<mark>
+
+<time>
