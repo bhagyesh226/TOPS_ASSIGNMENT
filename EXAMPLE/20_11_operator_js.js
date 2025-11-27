@@ -27,10 +27,10 @@ document.writeln('<hr><b><br> Assignment Operator </b>');
 let e = 10;
 document.writeln('<br> E is : ', e);
 
-e += 10;
+e+=10;
 document.writeln('<br> E += 10 : ', e);
 
-e **= 10;
+e**= 10;
 document.writeln('<br> E **= 10 : ', e);
 
 e %= 10;
@@ -62,3 +62,12 @@ document.writeln("<br> X > Y AND Y > O : ", (x > y && y > o));
 document.writeln("<br> X > Y OR Y > O : ", (x > y || y > o));
 document.writeln("<br> !(X > Y) : ", !(x > y));
 document.writeln("<br> X > Y : ", (x > y));
+
+// Ternary operator   ( ? :  )
+document.writeln('<hr><b><br> Ternary Operator </b>');
+
+let age = 15 
+document.writeln((age>=20) ? "<br>you'r eligible for vote" : "<br>you'r not eligible for vote")
+
+let no = 25
+document.writeln((no%2 == 0) ? "<br>Number is odd": "<br>Number is evan")

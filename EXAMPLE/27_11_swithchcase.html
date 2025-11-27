@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //swithchcase normel 
+        let a = 20
+        let B = 30
+        let ch = parseInt(prompt('enter number 1 to 3:'))
+
+        switch (ch) {
+            case 1: document.write('<br> addition of A and B is: ', (a + B))
+                break
+            case 2: document.write('<br> Munus of A and B is: ', (a - B))
+                break
+            case 3: document.write('<br> Multiplication of A and B is: ', (a * B))
+                break
+            case 4: document.write('<br> Division of A and B is: ', (a / B))
+                break
+            default: document.write('<br> wrong vlue !!')
+        }
+
+        //a ,e i o u Vowel / Consonant 
+        document.write('<br><hr><b> Vowels / consoant  </b>')
+        let text = prompt('enter any text: ')
+        text1 =  text.charAt(0).toUpperCase()
+        switch (text1) {
+            case "A":
+            case "E":
+            case "I":
+            case "O":
+            case "U": document.write('<br>your text is vowels :', text)
+                break
+            default: document.write('<br>your text is consoant :', text)
+        }
+    </script>
+</body>
+
+</html>

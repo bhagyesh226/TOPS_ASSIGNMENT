@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        document.write('<br><hr><b> if else</b>')
+        let no = 39
+        if (no % 2 == 0) {
+            document.write('<br> nuber is Evan')
+        } else {
+            document.write('<br> nuber is odd')
+        }
+
+// student result with else id
+        document.write('<br><hr><b> Result with else if</b>')
+
+        let m1=parseInt( prompt("enter Node.js's  marck:"))
+        let m2=parseInt( prompt("enter HTML's  marck:"))
+        let m3 =parseInt( prompt("enter React.js's  marck:"))
+        let total = m1+m2+m3
+        let par = total/3
+        document.write('<br>Node.js = ',m1)
+        document.write('<br>HTML = ',m2)
+        document.write('<br>React.js = ',m3)
+        document.write('<br> total is ',total)
+        document.write('<br>par is ',par)
+
+        if(par >= 90){
+            document.write('<br> grad is A+')
+
+        }else if(par >= 80){
+            document.write('<br> grad is B+')
+
+        }else if(par >= 70){
+            document.write('<br> grad is C')
+
+        }else if(par >= 60){
+            document.write('<br> grad is D')
+
+        }else{
+            document.write('<br> Not pass')
+
+        }
+    </script>
+</body>
+
+</html>

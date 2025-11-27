@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if else</title>
+</head>
+
+<body>
+    <script>
+        // age counte 
+        document.write('<hr><b>age counte</b>')
+        let age = 99
+        if (age >= 18) {
+            if (age >= 65) {
+                document.write('<br> Eligible for pension')
+            }
+            document.write('<br> Eligible for vote')
+        } else {
+            document.write('<br> not Eligible for vote')
+        }
+
+        // a , b , c, d mix finde 
+        document.write('<br><hr><b>finde mix value</b>')
+        let a = parseInt(prompt("enter vlue of a"))
+        let b = parseInt(prompt("enter vlue of b"))
+        let c = parseInt(prompt("enter vlue of c"))
+        let d = parseInt(prompt("enter vlue of d"))
+        document.write('<br> vlue of a is :', a)
+        document.write('<br> vlue of b is :', b)
+        document.write('<br> vlue of c is :', c)
+        document.write('<br> vlue of d is :', d)
+        if (a > b) {
+            if (a > c) {
+                if (a > d) {
+                    document.write('<br> A is mix')
+                } else {
+                    document.write('<br> D is mix')
+                }
+            } else {
+                if (c > d) {
+                    document.write('<br> C is mix')
+                } else {
+                    document.write('<br> D is mix')
+                }
+            }
+        } else {
+            if (b > c) {
+                if (b > d) {
+                    document.write('<br> B is mix')
+                } else {
+                    document.write('<br> D is mix')
+                }
+            } else {
+                if (c > d) {
+                    document.write('<br> C is mix')
+                }
+                else {
+                    document.write('<br> D is mix')
+                }
+            }
+
+        }
+
+        document.write('<br><hr><b>finde mix value</b>')
+        let A = parseInt(prompt("enter vlue of A"))
+        let B = parseInt(prompt("enter vlue of B"))
+        let C = parseInt(prompt("enter vlue of C"))
+        let D = parseInt(prompt("enter vlue of D"))
+        let E = parseInt(prompt("enter vlue of E"))
+        document.write('<br> vlue of A is :', A)
+        document.write('<br> vlue of B is :', B)
+        document.write('<br> vlue of C is :', C)
+        document.write('<br> vlue of D is :', D)
+        document.write('<br> vlue of E is :', E)
+        if (A > B) {
+            if (A > C) {
+                if (A > D) {
+                    if (A > E) {
+                        document.write('<br> vlue os A is max: ', A)
+                    } else {
+                        document.write('<br> vlue os E is max: ', E)
+                    }
+                } else {
+                    if (D > E) {
+                        document.write('<br> vlue os D is max: ', D)
+                    } else {
+                        document.write('<br> vlue os E is max: ', E)
+                    }
+                }
+            } else {
+                if (C > D) {
+                    if (C > E) {
+                        document.write('<br> vlue os C is max: ', C)
+                    } else {
+                        document.write('<br> vlue os E is max: ', E)
+                    }
+                } else {
+                    if (D > E) {
+                        document.write('<br> vlue os D is max: ', D)
+                    } else {
+                        document.write('<br> vlue os E is max: ', E)
+                    }
+                }
+            }
+        } else {
+            if (B > C) {
+                if (B > D) {
+                    if (B > E) {
+                        document.write('<br> vlue os B is max: ', B)
+                    } else {
+                        document.write('<br> vlue os E is max: ', E)
+                    }
+                } else {
+                    if (D > E) {
+                        document.write('<br> vlue os D is max: ', D)
+                    } else {
+                        document.write('<br> vlue os E is max: ', E)
+                    }
+                }
+            } else {
+                if (C > D) {
+                    if (C > E) {
+                        document.write('<br> vlue os C is max: ', C)
+                    } else {
+                        document.write('<br> vlue os E is max: ', E)
+                    }
+                } else {
+                    if (D > E) {
+                        document.write('<br> vlue os D is max: ', D)
+                    } else {
+                        document.write('<br> vlue os E is max: ', E)
+                    }
+                }
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
